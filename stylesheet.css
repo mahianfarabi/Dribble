@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'mona sans','helvetica neue','sans-serif', helvetica, arial, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'mona sans';
+    src: url('./font/mona-sans.ttf')
+}
+
+@font-face {
+    font-family: 'wendy';
+    src: url("./font/Wendy LP Std Bold.otf");
+}
+
+#app{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-top: 20px;
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    padding-left: 40px;
+    justify-content: space-between;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+#navbar ul li{
+    margin-right: 20px;
+}
+
+#menu{
+    display: flex;
+}
+
+#dribbleLogo{
+    font-family: 'wendy';
+    font-size: 40px;
+    transform: rotateY(30deg);
+    margin-right: 50px;
+    transform: rotate(-5deg);
+}
+
+#entry{
+    align-items: center;
+    display: flex;
+    margin-right: 50px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#register{
+    font-weight: 700;
+}
+
+#login{
+    border-radius: 25px;
+    height: 45px;
+    width: 80px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    align-items: center;
+    align-content: center;
+    margin-left: 10px;
+}
+
+#content{
+    margin-top: 50px;
+    margin-left: 80px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#searchBar{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+#searchBar h1{
+    font-size: 48px;
+    font-weight: 550;
+    font-stretch: expanded;
+    line-height: 1.08;
+}
+
+#searchBar p{
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    max-width: 413px;
+}
+
+#videoBar{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+#search-category{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+#shots{
+    display: flex;
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 15px;
+    align-items: center;
+}
+
+.non-active{
+    display: flex;
+    margin-right: 10px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: transparent;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 15px;
+    align-items: center;
+}
+
+.fa-image{
+    font-size: 14px;
+    margin-right: 5px;
+
+}
+
+.fa-user-group{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.fa-file-lines{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+#input-bar{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-input{
+    width: 100%;
+    height: 45px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.fa-magnifying-glass{
+    position: absolute;
+    font-size: 13px;
+    border: solid #e94c89;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #e94c89;
+    color: white;
+
+}
+
+#navbar a:hover{
+    color: #a077b1;
+}
+
+#dribbleLogo:hover{
+    color: #3e3d3d;
+}
+
+#login:hover{
+    background-color: #3e3d3d;
+    cursor: pointer;
+}
+
+.non-active:hover{
+    background-color: #f4f5f5;
+    cursor: pointer;
+}
+
+#shots:hover{
+    cursor: pointer;
+}
+
+#register:hover{
+    color: #a077b1;
+    cursor: pointer;
+}
+
