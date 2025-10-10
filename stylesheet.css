@@ -20,6 +20,15 @@ html,body{
     src: url("./font/Wendy LP Std Bold.otf");
 }
 
+@keyframes border-animation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 #app{
     width: 100%;
     height: 100%;
@@ -94,7 +103,7 @@ html,body{
     margin-top: 50px;
     margin-left: 80px;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     display: flex;
 }
 
@@ -122,7 +131,7 @@ html,body{
 #videoBar{
     width: 100%;
     height: 100%;
-    background-color: gray;
+    /*background-color: gray;*/
 }
 
 #search-category{
@@ -175,31 +184,170 @@ html,body{
 }
 
 #input-bar{
-   display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
 #search-input{
     width: 100%;
-    height: 45px;
+    height: 50px;
+    border: 1px solid transparent;
     border-radius: 25px;
     margin-top: 10px;
+    padding-left: 15px;
+    background: #f3f3f6;
 }
 
 .fa-magnifying-glass{
-    position: absolute;
-    font-size: 13px;
+    font-size: 18px;
     border: solid #e94c89;
     border-radius: 25px;
-    padding: 10px;
+    padding: 5px;
     background-color: #e94c89;
     color: white;
 
 }
 
-#navbar a:hover{
-    color: #a077b1;
+#input-bar button{
+    position: absolute ;
+    top: 17px;
+    right: 5px;
+    border: 0 solid transparent;
+    padding: 0;
+    background: white;
+    border-radius: 50%;
+}
+
+#input-bar input{
+
+}
+
+#trending-section{
+    width: 100%;
+    margin-top: 15px;
+}
+
+#trending-title{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.trending-content{
+    font-size: 12px;
+    border: 1px solid #e7e7e9;
+    border-radius: 25px;
+    padding: 8px;
+    margin-left: 15px;
+}
+
+#project-promo-banner{
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 95%;
+    background: #f8f8fc;
+    height: 75px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+
+    align-items: center;
+    align-content: center;
+    display: flex;
+
+}
+
+#match-box{
+    background: #ffffff;
+    border: 1px solid transparent;
+    height: 45px;
+    width:10%;
+    margin: 5px;
+    border-radius: 25px;
+    /*padding: 5px 10px;*/
+    position: relative;
+    overflow: hidden;
+}
+
+#match-box-content{
+    /*z-index: 1000;*/
+}
+
+#match-box-content::before{
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 30px;
+    top: 50%;
+    left: 50%;
+    background: #956bcd;
+    transform: translate(-50%, -50%);
+    animation: border-animation 5000ms infinite linear;
+    transform-origin: 50% 0;
+}
+
+#match-box-content:after{
+    content:'Get Matched Now';
+    position: absolute;
+    background: white;
+    left: 0;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    inset: 2px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    bottom: 2px;
+    text-align: center;
+    align-content: center;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+#match-box-prefix{
+    position: absolute;
+    /*width: 35px;*/
+    /*height: 15px;*/
+    background: deeppink;
+    margin-left: 9%;
+    margin-bottom: 15px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 15px;
+    /*padding-left: 5px;*/
+    /*padding-right: 5px;*/
+    padding: 4px 6px;
+    color: white;
+    /*padding-bottom: 1px;*/
+    line-height: 1;
+    font-stretch: expanded;
+
+}
+
+#banner-description{
+    font-size: 14px;
+    font-weight: 400;
+    color: #3a3546;
+    margin-left: 30px;
+}
+
+#video{
+    width: 70%;
+    height: 70%;
+    margin-left: 12%;
+    border-radius: 25px;
+}
+
+#filter-bar{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#popular{
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 5%;
+    text-align: center;
 }
 
 #dribbleLogo:hover{
@@ -225,3 +373,12 @@ html,body{
     cursor: pointer;
 }
 
+#input-bar input:hover{
+    background: white;
+    border: 2px solid #daaad8;
+}
+
+.trending-content:hover{
+    background: #f3f3f6;
+    cursor: pointer;
+}

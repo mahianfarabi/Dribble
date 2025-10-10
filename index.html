@@ -33,6 +33,7 @@
         </div>
 <!--        Navbar Ends-->
 
+<!--        content-->
         <div id="content">
             <div id="searchBar">
                 <h1 id="hero-heading">Discover the<br/>World's Top Designers</h1>
@@ -51,12 +52,42 @@
                         Services
                     </div>
                 </div>
-                <form id="input-bar">
-                    <input type="text" id="search-input" placeholder="Search Designers...">
+                <div id="input-bar">
+                    <input type="text" id="search-input" placeholder="What type of design are you interested in">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
+                </div>
+                <div id="trending-section">
+                    <span id="trending-title">Popular:</span>
+                    <span class="trending-content">Dashboard</span>
+                    <span class="trending-content">Landing page</span>
+                    <span class="trending-content">E-Commerce</span>
+                    <span class="trending-content">Logo</span>
+                    <span class="trending-content">Card</span>
+                    <span class="trending-content">Icons</span>
+                </div>
             </div>
-            <div id="videoBar"></div>
+            <div id="videoBar">
+                <video autoplay muted loop id="video">
+                    <source src="./videos/promo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+<!--        content ends-->
+
+<!--        promo banner-->
+        <div id="project-promo-banner">
+            <div id="match-box">
+                <span id="match-box-content"></span>
+            </div>
+            <span id="match-box-prefix">New</span>
+            <span id="banner-description">
+                Tell us what you need and instantly get matched with world-class talent ready to work on your project.
+            </span>
+        </div>
+<!--        promo banner ends-->
+
+        <div id="filter-bar">
+            <div id="popular">popular</div>
         </div>
     </div>
 </body>
