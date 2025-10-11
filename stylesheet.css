@@ -412,6 +412,10 @@ html,body{
     color: #3e3d3d;
 }
 
+#navbar a:hover{
+    color: #a077b1;
+}
+
 #login:hover{
     background-color: #3e3d3d;
     cursor: pointer;
